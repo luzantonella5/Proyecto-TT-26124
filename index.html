@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Front End - Clase</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Tienda Virtual</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#resenas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a Mi Tienda Virtual</h2>
+            <p>Encuentra los mejores productos y descubre por qué nuestros clientes nos eligen.</p>
+            <img src="https://images.unsplash.com/photo-1513708927688-890fe1e504a0?auto=format&fit=crop&w=500&q=80" alt="Imagen de muestra">
+        </section>
+
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="productos-container">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1513708927688-890fe1e504a0?auto=format&fit=crop&w=300&q=80" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p>Descripción breve del producto 1.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1532635040-7a4b3b28c6f1?auto=format&fit=crop&w=300&q=80" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p>Descripción breve del producto 2.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=300&q=80" alt="Producto 3">
+                    <h3>Producto 3</h3>
+                    <p>Descripción breve del producto 3.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resenas">
+            <h2>Reseñas</h2>
+            <div class="resenas-grid">
+                <div class="resena">
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <p>Excelente servicio, productos de calidad.</p>
+                    <span>- Ana</span>
+                </div>
+                <div class="resena">
+                    <p>⭐️⭐️⭐️⭐️</p>
+                    <p>Muy conforme, llegó todo en tiempo.</p>
+                    <span>- Pablo</span>
+                </div>
+                <div class="resena">
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <p>Volveré a comprar, ¡gracias!</p>
+                    <span>- Laura</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/moqzqoyl" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="video-container">
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de muestra" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Tienda Virtual. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
