@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto Front End - Clase</title>
+    <title> Proyecto Front End </title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- CSS Externo -->
@@ -11,11 +11,11 @@
 </head>
 <body>
     <header>
-        <h1>Mi Tienda Virtual</h1>
+        <h1> Talento Culinario </h1>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
+                <li><a href="#inicio">Inicio</a></li> 
+                <li><a href="#talleres">Talleres</a></li>
                 <li><a href="#resenas">Reseñas</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -24,28 +24,35 @@
 
     <main>
         <section id="inicio">
-            <h2>Bienvenidos a Mi Tienda Virtual</h2>
-            <p>Encuentra los mejores productos y descubre por qué nuestros clientes nos eligen.</p>
-            <img src="https://images.unsplash.com/photo-1513708927688-890fe1e504a0?auto=format&fit=crop&w=500&q=80" alt="Imagen de muestra">
-        </section>
+            <img src="images/Title.jpg" alt="utensilios">
+            <h2>Bienvenidos</h2>
+            <p>Este es un lugar donde los asistentes podrán participar de talleres culinarios de la mano de los mejores expertos.
+                Las sesiones están diseñadas para que cualquiera pueda aprender sin importar sus conocimientos previos.
+                Trabajamos con las mejores materias primas y proveedores locales.</p>
+                    </section>
 
-        <section id="productos">
-            <h2>Productos</h2>
+        <section id="talleres">
+            <h2>Talleres</h2>
             <div class="productos-container">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1513708927688-890fe1e504a0?auto=format&fit=crop&w=300&q=80" alt="Producto 1">
-                    <h3>Producto 1</h3>
-                    <p>Descripción breve del producto 1.</p>
+                    <img src="images/curso1.jpg" alt="Taller-pasteleria">
+                    <h3>TALLER DE PASTELERIA</h3>
+                    <p>Aprende a crear postres increibles con tecnicas profesionales y recetas faciles.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1532635040-7a4b3b28c6f1?auto=format&fit=crop&w=300&q=80" alt="Producto 2">
-                    <h3>Producto 2</h3>
-                    <p>Descripción breve del producto 2.</p>
+                    <img src="images/curso2.jpg" alt="Taller-medialunas">
+                    <h3>TALLER DE MEDIALUNAS</h3>
+                    <p>Hacelas desde cero en un taller 100% participativo, donde vas a descubrir todos los secretos para lograr medialunas tiernas, brillantes y con ese aroma inconfundible.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=300&q=80" alt="Producto 3">
-                    <h3>Producto 3</h3>
-                    <p>Descripción breve del producto 3.</p>
+                    <img src="images/curso3.jpg" alt="Taller-macarons-inicial">
+                    <h3>TALLER DE MACARONS INICIAL</h3>
+                    <p>Descubri el mundo delicado y colorido de los macarons en un taller diseñado para principiantes. Aprenderas todas las tecnicas necesarias para lograr macarons perfectos.</p>
+                </div>
+                <div class="card">
+                    <img src="images/curso4.jpg" alt="Taller-pasteleria">
+                    <h3>TALLER DE MACARONS AVANZADO</h3>
+                    <p>SE REQUIERE EXPERIENCIA PREVIA. Intensificacion en: rellenos, temperaturas, tecnicas de pintura y decoración maridajes.</p>
                 </div>
             </div>
         </section>
@@ -55,18 +62,23 @@
             <div class="resenas-grid">
                 <div class="resena">
                     <p>⭐️⭐️⭐️⭐️⭐️</p>
-                    <p>Excelente servicio, productos de calidad.</p>
-                    <span>- Ana</span>
+                    <p>Excelente taller, excelentes profesionales y con productos de calidad.</p>
+                    <span>- Juana</span>
                 </div>
                 <div class="resena">
                     <p>⭐️⭐️⭐️⭐️</p>
-                    <p>Muy conforme, llegó todo en tiempo.</p>
-                    <span>- Pablo</span>
+                    <p>Muy buena atención, el profesor atendió todas mis dudas.</p>
+                    <span>- María de Avellaneda</span>
                 </div>
                 <div class="resena">
                     <p>⭐️⭐️⭐️⭐️⭐️</p>
-                    <p>Volveré a comprar, ¡gracias!</p>
-                    <span>- Laura</span>
+                    <p>Sin duda seguiré haciendo talleres aquí</p>
+                    <span>- Juan Carlos</span>
+                </div>
+                <div class="resena">
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <p>Excelente</p>
+                    <span>- Valentín</span>
                 </div>
             </div>
         </section>
@@ -74,25 +86,25 @@
         <section id="contacto">
             <h2>Contacto</h2>
             <form action="https://formspree.io/f/moqzqoyl" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                 <label for="nombre">Nombre:</label>
+                 <input type="text" id="nombre" name="nombre" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                 <label for="email">Correo electrónico:</label>
+                 <input type="email" id="email" name="email" required>
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
+                 <label for="mensaje">Mensaje:</label>
+                 <textarea id="mensaje" name="mensaje" required></textarea>
 
-                <button type="submit">Enviar</button>
+                 <button type="submit">Enviar</button>
             </form>
             <div class="video-container">
-                <iframe width="320" height="180" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de muestra" frameborder="0" allowfullscreen></iframe>
+                <img src="images/Gif-final.gif" alt="powder-sugar" class="gif-ajustado">
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Mi Tienda Virtual. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Talento Culinario. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

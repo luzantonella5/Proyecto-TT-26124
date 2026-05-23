@@ -1,4 +1,3 @@
-/* Google Fonts */
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
@@ -6,21 +5,29 @@ body {
     box-sizing: border-box;
 }
 
-/* Header y Navegación */
 header {
-    background: linear-gradient(90deg, #4158d0, #c850c0 100%);
+    background: linear-gradient(90deg, #4e01c9, #009721 100%);
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+#inicio img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22px;
+    max-width: 80%;
+    border-radius: 12px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 15px 0 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+    display: flex;                  
+    justify-content: center;        
+    gap: 80px;                      
 }
 
 nav a {
@@ -42,7 +49,6 @@ footer {
     margin-top: 36px;
 }
 
-/* Secciones */
 section {
     margin: 40px auto;
     max-width: 900px;
@@ -50,9 +56,9 @@ section {
     background-color: #f8f8f8;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(60, 60, 60, 0.05);
+    justify-content: center;
 }
 
-/* Productos - Flexbox */
 .productos-container {
     display: flex;
     flex-wrap: wrap;
@@ -76,7 +82,6 @@ section {
     border-radius: 8px;
 }
 
-/* Reseñas - Grid */
 .resenas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -91,7 +96,6 @@ section {
     text-align: center;
 }
 
-/* Formulario de Contacto y Multimedia */
 form {
     display: flex;
     flex-direction: column;
@@ -101,6 +105,8 @@ form {
     border-radius: 10px;
     max-width: 400px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 form label {
@@ -134,12 +140,16 @@ form button:hover {
     text-align: center;
 }
 
-.video-container iframe {
-    max-width: 100%;
+.gif-ajustado {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px; 
+    width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
-/* Responsivo */
 @media (max-width: 700px) {
     nav ul {
         flex-direction: column;
@@ -154,7 +164,6 @@ form button:hover {
     }
 }
 
-/* Responsividad del formulario */
 @media (max-width: 480px) {
     form {
         max-width: 100%;
