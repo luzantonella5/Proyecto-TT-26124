@@ -1,47 +1,55 @@
 const contenedorProductos = document.getElementById("productos");
 const contadorCarrito = document.getElementById("cantidad-carrito");
 
-// Catálogo propio de talleres
+
 const talleres = [
     {
         nombre: "Taller de Pastelería",
         descripcion: "Aprendé técnicas profesionales para crear postres increíbles.",
-        precio: 25000
+        precio: 25000,
+        imagen: "img/pasteleria.jpg"
     },
     {
         nombre: "Taller de Medialunas",
         descripcion: "Descubrí todos los secretos para lograr medialunas tiernas y brillantes.",
-        precio: 18000
+        precio: 18000,
+        imagen: "img/medialunas.jpg"
     },
     {
         nombre: "Taller de Pastas Caseras",
         descripcion: "Prepará pastas frescas totalmente artesanales.",
-        precio: 22000
+        precio: 22000,
+        imagen: "img/pastas.jpg"
     },
     {
         nombre: "Taller de Pastas Rellenas",
         descripcion: "Ravioles, sorrentinos y diferentes tipos de rellenos.",
-        precio: 24000
+        precio: 24000,
+        imagen: "img/pastas-rellenas.jpg"
     },
     {
         nombre: "Taller de Cookies",
         descripcion: "Cookies clásicas y gourmet con diferentes sabores.",
-        precio: 17000
+        precio: 17000,
+        imagen: "img/cookies.jpg"
     },
     {
         nombre: "Taller de Chocolatería",
         descripcion: "Bombones, tabletas y técnicas de templado.",
-        precio: 26000
+        precio: 26000,
+        imagen: "img/chocolate.jpg"
     },
     {
         nombre: "Taller de Macarons",
         descripcion: "Macarons franceses con rellenos y decoración.",
-        precio: 28000
+        precio: 28000,
+        imagen: "img/macarons.jpg"
     },
     {
         nombre: "Taller de Tortas Decoradas",
         descripcion: "Decoración con buttercream, drip cake y ganache.",
-        precio: 30000
+        precio: 30000,
+        imagen: "img/tortas.jpg"
     }
 ];
 
@@ -81,7 +89,7 @@ function mostrarProductos(imagenes) {
 
         <div class="card">
 
-            <img src="${imagen.strMealThumb}" alt="${taller.nombre}">
+            <img src="${taller.imagen}" alt="${taller.nombre}">
 
             <h3>${taller.nombre}</h3>
 
