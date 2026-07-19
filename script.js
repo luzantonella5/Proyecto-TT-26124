@@ -99,7 +99,7 @@ function mostrarProductos(imagenes) {
 
             <h4>$${taller.precio}</h4>
 
-            <button onclick="agregarAlCarrito(${index})">
+            <button aria-label="Inscribirse al ${taller.nombre}" onclick="agregarAlCarrito(${index})">
                 Inscribirme
             </button>
 
@@ -184,6 +184,37 @@ function eliminarInscripcion(indice){
     mostrarInscripciones();
 
 }
+
+const formulario = document.querySelector("form");
+
+formulario.addEventListener("submit", function(event){
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const mensaje = document.getElementById("mensaje").value.trim();
+
+
+    if(nombre === "" || email === "" || mensaje === ""){
+
+        event.preventDefault();
+
+        alert("Por favor completá todos los campos.");
+
+        return;
+
+    }
+
+
+    if(!email.includes("@")){
+
+        event.preventDefault();
+
+        alert("Ingresá un correo electrónico válido.");
+
+    }
+
+});
+
 
 cargarProductos();
 mostrarInscripciones();
