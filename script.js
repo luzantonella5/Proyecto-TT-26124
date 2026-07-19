@@ -1,5 +1,7 @@
 const contenedorProductos = document.getElementById("productos");
 const contadorCarrito = document.getElementById("cantidad-carrito");
+const listaInscripciones = document.getElementById("lista-inscripciones");
+const totalInscripciones = document.getElementById("total-inscripciones");
 
 
 const talleres = [
@@ -116,6 +118,7 @@ function agregarAlCarrito(indice){
     localStorage.setItem("carrito", JSON.stringify(carrito));
 
     actualizarContador();
+    mostrarInscripciones();
 
     alert("¡Te inscribiste al taller!");
 
@@ -127,4 +130,60 @@ function actualizarContador(){
 
 }
 
+function mostrarInscripciones(){
+
+    listaInscripciones.innerHTML = "";
+
+    if(carrito.length === 0){
+
+        listaInscripciones.innerHTML = "<p>No hay talleres seleccionados todavía.</p>";
+        totalInscripciones.textContent = 0;
+        return;
+
+    }
+
+
+    let total = 0;
+
+
+    carrito.forEach((taller, index)=>{
+
+        total += taller.precio;
+
+
+        listaInscripciones.innerHTML += `
+
+        <div class="card">
+
+            <h3>${taller.nombre}</h3>
+
+            <p>$${taller.precio}</p>
+
+            <button onclick="eliminarInscripcion(${index})">
+                Eliminar
+            </button>
+
+        </div>
+
+        `;
+
+    });
+
+
+    totalInscripciones.textContent = total;
+
+}
+
+function eliminarInscripcion(indice){
+
+    carrito.splice(indice,1);
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
+    actualizarContador();
+    mostrarInscripciones();
+
+}
+
 cargarProductos();
+mostrarInscripciones();
